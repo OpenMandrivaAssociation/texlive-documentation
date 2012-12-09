@@ -50,3 +50,19 @@ reports, etc.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Feb 23 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1-3
++ Revision: 779437
+- Update to latest release.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1-2
++ Revision: 751009
+- Rebuild to reduce used resources
+
+* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.1-1
++ Revision: 739593
+- texlive-documentation
+- texlive-documentation
+
