@@ -1,4 +1,4 @@
-# revision 32167
+# revision 32761
 # category Package
 # catalog-ctan /macros/latex/contrib/documentation
 # catalog-date 2011-12-02 09:08:13 +0100
@@ -6,7 +6,7 @@
 # catalog-version 0.1
 Name:		texlive-documentation
 Version:	0.1
-Release:	9
+Release:	10
 Summary:	Documentation support for C, Java and assembler code
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/documentation
