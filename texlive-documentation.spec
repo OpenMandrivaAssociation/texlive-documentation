@@ -1,19 +1,13 @@
-# revision 32761
-# category Package
-# catalog-ctan /macros/latex/contrib/documentation
-# catalog-date 2011-12-02 09:08:13 +0100
-# catalog-license lppl1.2
-# catalog-version 0.1
 Name:		texlive-documentation
-Version:	0.1
-Release:	15
+Version:	34521
+Release:	1
 Summary:	Documentation support for C, Java and assembler code
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/documentation
 License:	LPPL1.2
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/documentation.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/documentation.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/documentation.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/documentation.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/documentation.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/documentation.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ programs such that the result is acceptable for inclusion in
 reports, etc.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -43,7 +37,8 @@ reports, etc.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
