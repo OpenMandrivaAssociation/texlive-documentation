@@ -1,6 +1,6 @@
 Name:		texlive-documentation
 Version:	34521
-Release:	1
+Release:	2
 Summary:	Documentation support for C, Java and assembler code
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/documentation
