@@ -3,7 +3,7 @@ Version:	34521
 Release:	2
 Summary:	Documentation support for C, Java and assembler code
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/documentation
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/documentation
 License:	LPPL1.2
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/documentation.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/documentation.doc.r%{version}.tar.xz
